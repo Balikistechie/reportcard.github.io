@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  place-items: center;
+  padding-top: 2rem;
+}
+.container{
+  border: 1px solid black;
+}
+.container::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("fortable-badge.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+  width: 60%;
+  height: 300px;
+  opacity: 0.1;
+}
+.grid-container-1,
+.grid-container-2{
+  display: grid;
+  grid-template-columns: repeat(4, 130px);
+  font-size: 0.7rem;
+}
+.grid-container-2 .span-me{
+  display: grid;
+  grid-column: span 2;
+}
+.grid-container-1 section,
+.grid-container-2 section{ 
+  border: 1px solid black;
+}
+.grid-container-1 .child-grid-2{
+  display: grid;
+ grid-column: span 2;
+}
+.grid-container-1 .center-align{
+ text-align: center;
+}
+.grid-container-1 .child-grid-3 img{
+margin-top: 20px;
+}
+.second-layout{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+  font-size: 0.7rem;
+  width: 520px;
+}
+ table,td{
+  border: 1px solid black;
+  font-size: 0.6rem;
+ border-collapse: collapse;
+ padding:0 0.45rem 0.1rem 0.45rem;
+}
+ .vertical-align{
+  writing-mode: vertical-lr;
+  text-align: center;
+}
+.class-of-tables{
+  display: flex;
+}
+.class-of-tables .child-table{
+width: 70%;
+padding: 0.4rem 0 0 0.4rem;
+}
+.class-of-tables .child-table-2{
+  width: 30%;
+  font-size: 0.7rem;
+  float: right;
+}
+.child-table-2 p{
+  font-weight: bold;
+}
+.span-2-table{
+padding-right: 6rem;
+}
+.padded-right{
+  padding-right: 3.2rem;
+}
+.padded-right-ii{
+  padding-right: 3.2rem;
+}
+ .para{
+  padding-top: 0.5rem;
+}
+.summary-layout{
+  display: flex;
+  font-size: 0.7rem;
+}
+.summary-layout .summary-child{
+width: 80%;
+padding:0 0.4rem 0.1rem 0.4rem;
+}
+.second-layout .summary-child-2{
+  width: 20%;
+} 
+.summary-child-2 p{
+  border-left: 1px solid black;
+  padding: 0.5rem;
+}
+.summary-layout td{
+  padding:0 0.8rem 0.1rem 0.8rem;
+}
+.remarks-layout{
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.remarks-layout span{
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+.remarks-layout .unique-span{
+  border: none;
+  font-weight: lighter;
+}
+.remarks-layout .unique-para{
+  text-align: center;
+  font-weight: bold;
+}
